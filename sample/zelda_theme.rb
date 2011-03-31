@@ -15,10 +15,7 @@ zelda =
     end
   end
 
-zelda.play(DATA, :range => 0..-1, :tune => [:lead, :lead2, :base])
-
-
-__END__
+data =<<-EOS
 :lead
  2A# 12 12 12A# 12A# 12A# 12A#           6A# 12G# 4A# 12 12 12A# 12A# 12A# 12A#
  6A# 12G# 4A# 12 12 12A# 12A# 12A# 12A#   8A# 16F 16F 8F 16F 16F 8F 16F 16F 8F 8F 
@@ -96,4 +93,6 @@ __END__
  - 12E 12A# + 12C# 12E 12A# + 12C# 4E 4    4F -- 12F 12F 12F 4F 4
  - 4B 12B 12B 12A# 4B 12B 12B 12B          4A# 12A# 12A# 12G# 4A# 12A# 12A# 12A#
  4C 12C 12C - 12B + 4C 12C 12C 12C         - 4F 4F 4F 8G 8A
+EOS
 
+zelda.play(data, :range => 0..-1, :tune => [:lead, :lead2, :base])

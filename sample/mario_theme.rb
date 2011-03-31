@@ -27,9 +27,7 @@ mario =
     end
   end
 
-mario.play(DATA, :range => 0..-1, :tune => [:lead, :lead2, :base])
-
-__END__
+data =<<-EOS
 :lead
  8E5 8E5 8 8E5 8 8C5 4E5    4G5 4 4G4 4           4C5 8 8G4 4 4E4          8 4A4 4B4 8A#4 4A4
  6G4 6E5 6G5 4A5 8F5 8G5    8 4E5 8C5 8D5 4B4 8   4C5 8 8G4 4 4E4          8 4A4 4B4 8A#4 4A4
@@ -95,4 +93,6 @@ __END__
  3D3 6F3 4G3 4B3           4G3 4G3 8C4 8C4 4G3   4C3 8 8F#3 4G3 4C4      4F3 4F3 8C4 8C4 4F3
  8G3 4G3 8G3 6G3 6A3 6B3   4C4 4G3 2C3           4G3 8 4E3 8 4C3         2F3 2C#3
  1C3
+EOS
 
+mario.play(data, :range => 0..-1, :tune => [:lead, :lead2, :base])

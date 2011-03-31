@@ -1,4 +1,4 @@
-require "bloops"
+#require "bloops"
 
 class BloopSong
   def self.init(tempo)
